@@ -30,14 +30,7 @@ export function getDealsTools(apiToken: string) {
           `/deals?${params.toString()}`
         );
 
-        return {
-          content: [
-            {
-              type: 'text' as const,
-              text: JSON.stringify(response, null, 2),
-            },
-          ],
-        };
+        return response.data;
       },
     },
 
@@ -55,14 +48,7 @@ export function getDealsTools(apiToken: string) {
           `/deals/${input.id}`
         );
 
-        return {
-          content: [
-            {
-              type: 'text' as const,
-              text: JSON.stringify(response, null, 2),
-            },
-          ],
-        };
+        return response.data;
       },
     },
 
@@ -89,14 +75,7 @@ export function getDealsTools(apiToken: string) {
           }
         );
 
-        return {
-          content: [
-            {
-              type: 'text' as const,
-              text: JSON.stringify(response, null, 2),
-            },
-          ],
-        };
+        return response.data;
       },
     },
 
@@ -124,14 +103,7 @@ export function getDealsTools(apiToken: string) {
           }
         );
 
-        return {
-          content: [
-            {
-              type: 'text' as const,
-              text: JSON.stringify(response, null, 2),
-            },
-          ],
-        };
+        return response.data;
       },
     },
 
@@ -156,14 +128,7 @@ export function getDealsTools(apiToken: string) {
           `/itemSearch?${params.toString()}`
         );
 
-        return {
-          content: [
-            {
-              type: 'text' as const,
-              text: JSON.stringify(response, null, 2),
-            },
-          ],
-        };
+        return response.data;
       },
     },
   ];
